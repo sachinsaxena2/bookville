@@ -16,10 +16,11 @@ public class OrderConfirmationController {
     }
 
     @GetMapping("/confirmOrder")
-    public String saveOrder(@RequestParam String phoneNumber, @RequestParam(required = false) String email) {
+    public void saveOrder(@RequestParam String phoneNumber, @RequestParam String name) {
         log.info("PHONE NUMBER "+phoneNumber);
+        log.info("Name "+name);
         String best = "perfect";
-        return best;
+       // return best;
     }
 }
 
